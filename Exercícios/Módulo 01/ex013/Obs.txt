@@ -1,0 +1,2 @@
+Esse exercício foi mostrando a aplicação do CSS inline, ou seja, como não
+deve ser feita.

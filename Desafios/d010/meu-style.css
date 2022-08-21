@@ -1,0 +1,130 @@
+@charset "UTF-8";
+@font-face {
+    font-family: idroid;
+    src: url('Arquivos/fontes/idroid.otf') format('opentype');
+}
+
+        /* * {
+            box-sizing : border-box;
+            margin: 0px auto;
+        } */
+
+        body {
+            background-color: #84E1AD;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            margin: 0px;
+        }
+
+        h1 {
+            font-family: idroid, Arial, sans-serif;
+            font-size: 2em;
+            margin-top: 16px;
+            margin-bottom: 16px;
+        }
+
+        article > h1 {
+            color: #164e2f;
+        }
+        
+        h2 {
+            background-image: linear-gradient(to right, #84E1AD, white);
+            font-family: idroid, Arial, sans-serif;
+            color: #164e2f;
+            padding: 0px 10px;
+        }
+
+        header {
+            background-image: linear-gradient(to bottom, #32B36B, #299457, #1E693F, #1A5C38);
+            padding: 10px;
+            margin: 0px;
+        }
+
+        .cab-text {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav {
+            padding: 2px;
+        }
+    
+        nav > a {
+            color: white;
+            text-decoration: none;
+            margin: 0px 15px 0px 15px;
+            font-weight: bold;
+        }
+
+        main {
+            background-color: white;
+            color: black;
+            margin: 0px 200px 10px 200px;
+            border-radius: 0px 0px 10px 10px;
+        }
+
+        section > article {
+            text-align: justify;
+        }
+
+        article {
+            padding: 5px 15px;
+        }
+
+        article > p {
+            text-indent: 2em;
+        }
+
+        picture {
+            display: block;
+            text-align: center;
+        }
+
+        .video {
+            text-align: center;
+            background-color: #1A5C38;
+            padding: 20px;
+            margin: 0px;
+        }
+
+        #extra {
+            background-color: #C5EBD6;
+            border-radius: 30px;
+            margin: 10px 15px 10px 15px;
+            padding: 10px 10px;
+        }
+
+        #extra > h3 {
+            background-color: #2FA866;
+            color: white;
+            padding: 10px;
+            margin: -10px -10px 10px;
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        strong {
+            color: #1a914d;;
+        }
+
+        .links {
+            text-decoration: none;
+            color: #1a914d;
+            font-weight: bold;
+        }
+
+        .links::after {
+            content: '🔗';
+        }
+
+        footer {
+            background-color: #1A5C38;
+            font-size: 0.9em;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
