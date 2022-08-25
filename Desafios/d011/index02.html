@@ -10,31 +10,33 @@
             height: 100vh;
             margin: 0px;
             background-color: black;
-                /* height: 200vh; */
-                background-image: url(imagens/espaco.jpg);
-                background-size: cover;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+            background-image: url(imagens/espaco.jpg);
+            background-size: cover;
         }
 
-        /* #geral {
+        #geral {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-            position: relative;
-        } */
-/* AQUI */
+        }
+
         #astr {
-            /* margin: 0px; */
-            position: fixed;
-            
+            position: fixed;  
+         }
+
+         #astr > img {
+            width: 400px;
+            height: 400px;
          }
     </style>
 </head>
 <body>
-    <!-- <div id="geral"> -->
+    <div id="geral">
         <div id="astr">
             <img src="imagens/astronauta.png" alt="imagem de um astronauta">
         </div>
-    <!-- </div> -->
+    </div>
 </body>
 </html>
