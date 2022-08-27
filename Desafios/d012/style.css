@@ -18,6 +18,10 @@
     font-size: 1em;
 }
 
+/* body {
+    width: 95vw;
+} */
+
 header {
     background-color: black;
     color: white;
@@ -62,10 +66,18 @@ main > p {
 
 #primeira {
     background-image: url(imagens/background001.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right bottom;
 }
 
 #segunda {
     background-image: url(imagens/background002.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right bottom;
 }
 
 .box-int {
