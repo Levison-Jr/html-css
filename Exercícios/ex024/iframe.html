@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: gray;
+        }
+
+        main {
+            background-color: white;
+            border-radius: 10px;
+            margin: auto;
+            text-align: center;
+            max-width: 50vw;
+        }
+
+        ul {
+            list-style-position: inside;
+            text-align: justify;
+            padding-bottom: 20px;
+        }
+
+        p {
+            text-align: justify;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        div {
+            padding: 15px;
+        }
+
+        iframe {
+            height: 50vh;
+            width: 40vw;
+        }
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <div>
+            <h1>Escolha uma página</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem omnis eos ut non voluptatibus assumenda soluta, laboriosam tempore debitis eaque, libero pariatur laborum harum? Cupiditate tempore nemo vero dicta inventore!</p>
+            <ul>
+                <li><a href="paginas-iframe/pag-about.html" target="main-frame" rel="next">Sobre a pesquisa</a></li>
+                <li><a href="paginas-iframe/pag-data.html" target="main-frame" rel="next">Dados relacionados</a></li>
+                <li><a href="paginas-iframe/pag-results.html" target="main-frame" rel="next">Resultados</a></li>
+            </ul>
+
+            <iframe src="" name="main-frame"></iframe>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, enim ab impedit fugiat, reprehenderit totam accusantium cupiditate id ad quod quos distinctio nobis ea deserunt fugit voluptatum sed perspiciatis ipsa.</p>
+
+        </div>
+
+        
+
+    </main>
+</body>
+</html>
