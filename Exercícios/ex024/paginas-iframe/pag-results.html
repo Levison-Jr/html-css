@@ -16,6 +16,16 @@
             display: block;
             text-align: center;
         }
+
+        h2 {
+            padding-left: 10px;
+        }
+
+        p{
+            text-align: justify;
+            text-indent: 2em;
+            padding: 10px;
+        }
     </style>
 </head>
 <body>
@@ -23,6 +33,8 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe harum assumenda animi earum eveniet quidem fugiat esse corporis consectetur pariatur beatae eum corrupti omnis dolorem sed ut qui, maiores odio?Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nisi tenetur veritatis iure. Iusto dolores minus, et numquam eveniet facere totam nemo ipsa laborum ipsum dignissimos explicabo saepe quidem atque!</p>
 
     <picture> <!--Max dessa imagem é width: 720px-->
+        <source media="(max-width: 500px)" srcset="maps-pag-results-pq.jpg" type="image/jpeg">
+        <source media="(max-width: 720px)" srcset="maps-pag-results-med.jpg" type="image/jpeg">
         <img src="maps-pag-results.jpg" alt="Imagem de um mapa feito em madeira" type="image/jpeg">
     </picture>
 
