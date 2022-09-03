@@ -12,10 +12,13 @@ html, body {
     background-color: black;
 }
 
+body {
+    background: url('../imagens/fundo-madeira.jpg') top center/cover no-repeat fixed;
+}
+
 main {
     position: relative;
     height: 100vh;
-    background-color: green;
 }
 
 section#cel {
@@ -23,8 +26,15 @@ section#cel {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 300px;
-    width: 300px;
-    background-color: blue;
+    height: 500px;
+    width: 250px;
+    background: url('../imagens/frame-iphone.png') center center/contain no-repeat;
+}
 
+iframe#tela {
+    position: relative;
+    top: 66px;
+    left: 21px;
+    width: 209px;
+    height: 372px;
 }
