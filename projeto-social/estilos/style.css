@@ -51,7 +51,6 @@ section#redes img {
 }
 
 section#redes img:hover {
-    border-radius: 40%;
     transform: translate(-3px, -3px);
     transition: transform 0.25s;
 }
