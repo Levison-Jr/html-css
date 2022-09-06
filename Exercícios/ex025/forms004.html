@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex004</title>
+    <style>
+        fieldset {
+            font-family: Arial, Helvetica, sans-serif;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo com formulários</h1>
+
+    <form action="cadastro.php">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p><label for="iuser">Nome:</label>
+                <input type="text" name="user" id="iuser" placeholder="Nome completo" required>
+            </p>
+            <p><label for="iage">Idade:</label>
+                <input type="number" name="age" id="iage" step="1" min="18" placeholder="18" required>
+            </p>
+            
+            <p>Email:
+                <input type="email" name="email" id="iemail" placeholder="exemplo@gmail.com" required>
+            </p>
+            <p>Tel:
+                <input type="tel" name="tel" id="itel" placeholder="(xx) x xxxx-xxxx" required>
+            </p>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Cadastrar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
