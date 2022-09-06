@@ -15,21 +15,23 @@
 <body>
     <h1>Exemplo com formulários</h1>
 
-    <form action="cadastro.php">
+    <form action="cadastro.php" method="post" autocomplete="on">
         <fieldset>
             <legend>Dados Pessoais</legend>
+
             <p><label for="iuser">Nome:</label>
-                <input type="text" name="user" id="iuser" placeholder="Nome completo" required>
+                <input type="text" name="user" id="iuser" placeholder="Nome completo" required autocomplete="username">
             </p>
             <p><label for="iage">Idade:</label>
                 <input type="number" name="age" id="iage" step="1" min="18" placeholder="18" required>
             </p>
             
-            <p>Email:
-                <input type="email" name="email" id="iemail" placeholder="exemplo@gmail.com" required>
+            <p><label for="iemail">Email:</label>
+                <input type="email" name="email" id="iemail" placeholder="exemplo@gmail.com" required autocomplete="email">
             </p>
-            <p>Tel:
-                <input type="tel" name="tel" id="itel" placeholder="(xx) x xxxx-xxxx" required>
+
+            <p><label for="itel">Tel:</label>
+                <input type="tel" name="tel" id="itel" placeholder="(xx) x xxxx-xxxx" required autocomplete="tel">
             </p>
         </fieldset>
 
