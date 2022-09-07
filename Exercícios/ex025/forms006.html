@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex006</title>
+</head>
+<body>
+    <h1>Cores, range e files</h1>
+
+    <form action="cadastro.php" method="post">
+        <p><label for="icolor">Selecione uma cor: </label>
+            <input type="color" name="color" id="icolor" value="#0011ff">
+        </p>
+
+        <p><label for="irang">Avaliação:</label>
+            <input type="range" name="rang" id="irang" min="1" max="10" value="5">
+        </p>
+
+        <p><label for="ifile">Selecione um arquivo:</label>
+            <input type="file" name="file" id="ifile" multiple>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
