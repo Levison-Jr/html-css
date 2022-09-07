@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 008</title>
+</head>
+<body>
+    <h1>Exemplo com JavaScript</h1>
+
+    <form action="cadastro.php" method="get">
+        <p><label for="irate">Avaliação:</label>
+            <input type="range" name="rate" id="irate" value="50" oninput="numRate.innerHTML = Number(irate.value) + '%'">
+            <output id="numRate">50%</output>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
