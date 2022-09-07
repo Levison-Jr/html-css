@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex007</title>
+</head>
+<body>
+    <h1>Seleção de Listas</h1>
+
+    <form action="cadastro.php" method="get">
+        <p><label for="iest">Estado:</label>
+            <select name="est" id="iest">
+                <option disabled value="0" selected>-- Escolha uma opção --</option>
+                <optgroup label="Distribuição">
+                    <option value="dsBA">Bahia</option>
+                    <option value="dsSP">São Paulo</option>
+                    <option value="dsRJ">Rio de Janeiro</option>
+                    <option value="dsMG">Minas Gerais</option>
+                </optgroup>
+                <optgroup label="Fabricação">
+                    <option value="fbBA">Bahia</option>
+                    <option value="fbSP">São Paulo</option>
+                    <option value="fbRJ">Rio de Janeiro</option>
+                    <option value="fbMG">Minas Gerais</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p><label for="iocup">Ocupação:</label>
+            <input type="text" name="ocup" id="iocup" list="list-ocup">
+                <datalist id="list-ocup">
+                    <option>Gerente</option>
+                    <option>Administrador</option>
+                    <option>Operador de Máquina</option>
+                    <option>Contador</option>
+                </datalist>
+        </p>
+
+        <label for="imsg">Mensagem:<br></label>
+            <textarea name="msg" id="imsg" cols="30" rows="10" maxlength="250" style="resize: none"></textarea>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
