@@ -21,7 +21,7 @@ body {
 
 main {
     background-color: rgba(255, 255, 255, 0.85);
-    max-width: 400px;
+    width: 60vw;
     margin: 20px auto;
     padding: 10px;
     border-radius: 10px;
@@ -34,11 +34,11 @@ h1 {
     text-shadow: 2px 2px 5px black;
 }
 
-img {
+#cel, #tab, #print, #pc, #tv {
     display: none;
 }
 
-img#cel {
+#cel {
     display: block;
     margin: auto;
 }

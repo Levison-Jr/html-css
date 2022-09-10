@@ -2,3 +2,82 @@
 
 /* Media Queries */
 
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    #cel, #tab, #print, #pc, #tv {
+        display: none;
+    }
+    
+    #print {
+        display: block;
+        margin: auto;
+    }
+
+    body {
+        background: white url('../imagens/back-print.jpg') no-repeat center center/cover;
+    }
+
+    main {
+        width: 90vw;
+        border: 2px solid black;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    main::after {
+        content: 'Impressão feita a partir do site www.cursoemvideo.com';
+        text-decoration: overline;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {           /*TABLETS*/
+    body {
+        background-image: url('../imagens/back-tablet.jpg');
+    }
+
+    #cel, #tab, #print, #pc, #tv {
+        display: none;
+    }
+    
+    #tab {
+        display: block;
+        margin: auto;
+    }
+
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {          /*DESKTOPS*/
+    body {
+        background-image: url('../imagens/back-pc.jpg');
+    }
+
+    #cel, #tab, #print, #pc, #tv {
+        display: none;
+    }
+    
+    #pc {
+        display: block;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 1201px) {                                 /*GRANDES TELAS*/
+    body {
+        background-image: url('../imagens/back-tv.jpg');
+    }
+
+    #cel, #tab, #print, #pc, #tv {
+        display: none;
+    }
+    
+    #tv {
+        display: block;
+        margin: auto;
+    }
+}
