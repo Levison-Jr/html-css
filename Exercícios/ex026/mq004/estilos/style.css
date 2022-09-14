@@ -102,6 +102,7 @@ main {
 article > h2, h3 {
     padding-bottom: 15px;
     color: var(--cor1);
+    text-transform: uppercase;
 }
 
 article > p {
