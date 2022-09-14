@@ -1,5 +1,18 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+/* font-family: 'Bungee', cursive; */
+
+:root {
+    --cor1: #0D0630;
+    --cor2: #546A7B;
+    --cor3: #C0E8F9;
+    --cor4: #FF6700;
+    --cor5: #FCD0A1;
+
+    --font1: 'Bungee', cursive;
+}
+
 * {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
@@ -7,21 +20,24 @@
 }
 
 html, body {
-    background-color: lightgrey;
+    background-color: var(--cor2);
 }
 
 header {
-    background-color: gray;
+    background-color: var(--cor1);
 }
 
 header > h1 {
-    padding: 10px;
+    font-family: var(--font1);
+    font-size: 2em;
+    padding: 15px;
     text-align: center;
     color: white;
     text-shadow: 2px 2px 5px black;
+    text-transform: uppercase;
 }
 
-#cont-menu {
+#cont-burguer {
     background-color: rgb(34, 34, 34);
     text-align: center;
     padding: 5px;
@@ -64,21 +80,26 @@ menu > ul > li > a {
     text-align: center;
     color: white;
     border: 1px solid rgba(0, 0, 0, 0.377);
+    border-radius: 5px;
+
+    text-transform: uppercase;
+    font-size: 0.8em;
 }
 
 menu > ul > li > a:hover {
-    font-weight: bold;
+    background-color: white;
+    color: black;
 }
 
 main {
-    width: 90vw;
+    width: 85vw;
     background-color: white;
-    margin: 10px auto;
-    padding: 10px;
+    margin: 0px auto 10px;
+    padding: 15px;
     border-radius: 0px 0px 10px 10px;
 }
 
-article > h2 {
+article > h2, h3 {
     padding-bottom: 10px;
 }
 
@@ -91,7 +112,7 @@ article > p {
 footer {
     display: block;
     text-align: center;
-    background-color: rgb(78, 78, 78);
+    background-color: var(--cor1);
     padding: 8px;
     font-size: 0.8em;
     color: white;

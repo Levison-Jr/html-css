@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css"> 
+    <link rel="stylesheet" href="estilos/media-queries.css">
     <title>Media Query</title>
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Portal de Notícias</h1>
-        <div id="cont-menu"><span id="burguer" class="material-icons" onclick="clickMenu()">menu</span></div>
+        <div id="cont-burguer"><span id="burguer" class="material-icons" onclick="clickMenu()">menu</span></div>
         <menu id="itens">
             <ul>
                 <li><a href="#">Home</a></li>
@@ -25,13 +26,23 @@
 
     <main>
         <article>
-            <h2>Testando Media Queries</h2>
+            <h2>Cenário Político</h2>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum consectetur maiores optio? Nostrum reiciendis sint animi molestias laborum ad ipsum, hic, quidem voluptates laudantium culpa possimus atque a quia accusamus.</p>
+
+            <h3>Eleições brasileiras</h3>
 
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque voluptates, recusandae provident quasi, in debitis pariatur reprehenderit quae accusantium sint praesentium ea illo assumenda, soluta corrupti magni expedita non minima? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci hic, et velit dolores accusantium, quidem nesciunt quos minus debitis deserunt rerum similique, aspernatur libero doloremque facere? Similique exercitationem autem illo.</p>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod excepturi sit culpa mollitia maxime obcaecati voluptates, minima eum. Dolorem ratione ut saepe quam voluptates temporibus autem, nesciunt corrupti perferendis recusandae! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium ullam sunt odit exercitationem unde dolorum nobis molestias esse fugiat eaque cumque possimus, numquam culpa quos ducimus dolore! Officiis, quos possimus?</p>
 
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt distinctio, harum minima consectetur voluptas id unde pariatur quidem, quisquam veritatis laborum praesentium molestias nihil dolore eligendi odit iure, inventore ad.</p>
+
+            <h3>Política Internacional</h3>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi non, nobis cupiditate omnis necessitatibus aut, dolore illum corrupti sapiente eaque obcaecati maxime adipisci iure sed fuga voluptas quod. Quas, tenetur?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis minus minima voluptates suscipit eligendi facilis tenetur vitae quisquam soluta fugit non beatae in, incidunt sapiente fuga consequuntur? Quos, ipsum hic?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quos aliquid corporis quidem id quia dolorem placeat, quis vitae ipsum ipsa laudantium saepe! Dolorem quibusdam illum at, consequuntur nihil esse?</p>
         </article>
     </main>
 
@@ -39,6 +50,14 @@
         <p>&copy; Desenvolvido em exercício do CursoEmVideo</p>
     </footer>
     <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
         function clickMenu() {
             if (itens.style.display == 'block') {
                 itens.style.display = 'none'
