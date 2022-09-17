@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+:root {
+    --cor1: #2D2A8C;
+    --cor2: #f20519;
+    --cor3: #f2f2f2;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#container {
+    position: relative;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
+}
+
+#box {
+    position: absolute;
+    background-color: white;
+    width: 60vw;
+    height: 85vh;
+    border-radius: 15px;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#box-int {
+    height: 180px;
+    max-width: 700px;
+    background: white url('imagens/flag-pq.jpg') left top/cover no-repeat;
+    border-radius: 15px 15px 0px 0px;
+}
+
+h1 {
+    padding: 10px 0px 5px;
+    text-align: center;
+}
+
+p#text {
+    margin: 0px auto 10px;
+    width: 50vw;
+}
+
+.inputs {
+    padding: 5px;
+    text-align: center;
+    background-color: #da0a1b33;
+    width: 50vw;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+#iemail {
+    height: 40px;
+    width: 40vw;
+    border-radius: 10px;
+    border: none;
+}
+
+#icon-mail {
+    display: inline;
+    color: #aa0311;
+    font-size: 30px;
+    position: relative;
+    top: 10px;
+}
+
+#ipass {
+    height: 40px;
+    width: 40vw;
+    border-radius: 10px;
+    border: none;
+}
+
+#icon-pass {
+    color: #aa0311;
+    font-size: 30px;
+    position: relative;
+    top: 10px;
+}
+
+.buttons {
+    text-align: center;
+    padding: 5px 0px 5px;
+}
+
+#but-login {
+    padding: 10px;
+    background-color: var(--cor1);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    width: 50vw;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#but-recovery {
+    padding: 10px;
+    background-color: var(--cor3);
+    border-radius: 10px;
+    border: 1px solid var(--cor1);
+    width: 50vw;
+}
+
+#but-login:hover {
+    background-color: #100f31;
+}
+
+#but-recovery:hover {
+    background-color: #423dc7;
+    color: white;
+}
