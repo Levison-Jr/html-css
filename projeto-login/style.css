@@ -21,7 +21,7 @@
 #box {
     position: absolute;
     background-color: white;
-    width: 60vw;
+    width: 85vw;
     height: 85vh;
     border-radius: 15px;
     
@@ -44,14 +44,14 @@ h1 {
 
 p#text {
     margin: 0px auto 10px;
-    width: 50vw;
+    width: 75vw;
 }
 
 .inputs {
     padding: 5px;
     text-align: center;
     background-color: #da0a1b33;
-    width: 50vw;
+    width: 75vw;
     border-radius: 10px;
     margin: auto;
     margin-bottom: 5px;
@@ -59,7 +59,7 @@ p#text {
 
 #iemail {
     height: 40px;
-    width: 40vw;
+    width: 60vw;
     border-radius: 10px;
     border: none;
 }
@@ -74,7 +74,7 @@ p#text {
 
 #ipass {
     height: 40px;
-    width: 40vw;
+    width: 60vw;
     border-radius: 10px;
     border: none;
 }
@@ -97,7 +97,7 @@ p#text {
     color: white;
     border-radius: 10px;
     border: none;
-    width: 50vw;
+    width: 75vw;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -107,7 +107,7 @@ p#text {
     background-color: var(--cor3);
     border-radius: 10px;
     border: 1px solid var(--cor1);
-    width: 50vw;
+    width: 75vw;
 }
 
 #but-login:hover {
