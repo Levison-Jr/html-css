@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    #box {
+        width: 650px;
+        height: 350px;
+    }
+
+    #box-int {
+        display: inline-block;
+        height: 100%;
+        width: 40%;
+        border-radius: 20px 0px 0px 20px;
+    }
+
+    main {
+        position: absolute;
+        display: inline-block;
+        text-align: center;
+    }
+
+    h1 {
+        width: 400px;
+    }
+    
+    p#text {
+        width: 350px;
+    }
+
+    .inputs {
+        width: 350px;
+    }
+
+    #iemail {
+        width: 300px;
+    }
+
+    #ipass {
+        width: 300px;
+    }
+
+    #but-login {
+        width: 350px;
+    }
+
+    #but-recovery {
+        width: 350px;
+    }
+}
+
