@@ -17,10 +17,12 @@
         position: absolute;
         display: inline-block;
         text-align: center;
+        height: 100%;
+        width: 60%;
     }
 
     h1 {
-        width: 400px;
+        width: 100%;
     }
     
     p#text {
