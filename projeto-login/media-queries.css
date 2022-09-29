@@ -33,25 +33,25 @@
 
     .inputs {
         padding: 0px 0px 5px;
-        width: 430px;
+        width: 90%;
         height: 50px;
         margin-bottom: 5px;
     }
 
     #iemail {
-        width: 380px;
+        width: 85%;
     }
 
     #ipass {
-        width: 380px;
+        width: 85%;
     }
 
     #but-login {
-        width: 430px;
+        width: 90%;
     }
 
     #but-recovery {
-        width: 430px;
+        width: 90%;
     }
 }
 
