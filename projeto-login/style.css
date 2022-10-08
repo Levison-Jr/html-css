@@ -16,10 +16,16 @@
     box-sizing: border-box;
 }
 
+body, html {
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
+    height: 100vh;
+    width: 100vw;
+}
+
 #container {
     position: relative;
     height: 100vh;
-    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
+    width: 100vw;
 }
 
 #box {
